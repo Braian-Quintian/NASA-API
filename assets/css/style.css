@@ -1,0 +1,48 @@
+body {
+    background-image: url("/assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    /* Centra el texto en las celdas */
+    border-bottom: 1px solid #ffffff;
+}
+
+th {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #00000041;
+}
+
+tr:nth-child(odd) {
+    background-color: #00000041;
+}
+
+tr:hover {
+    background-color: #336699ce;
+}
+
+tr.hazardous {
+    background-color: #ff000067;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/js/data.js" defer></script>
+        <script src="./assets/js/funcionalities.js" defer></script>
+        <title>Asteroids Near Earth</title>
+    </head>
+    <body>
+        <h1>Asteroids Near Earth</h1>
+        <div class="filter-container">
+            <label for="size-filter">Filtrar por tamaño:</label>
+            <select id="size-filter">
+                <option value="all">Todos</option>
+                <option value="small">Pequeños</option>
+                <option value="medium">Medianos</option>
+                <option value="large">Grandes</option>
+            </select>
+        </div>
+        <div class="sort-container">
+            <label for="sort-by">Clasificar por:</label>
+            <select id="sort-by">
+                <option value="name">Nombre</option>
+                <option value="size">Tamaño</option>
+                <option value="velocity">Velocidad</option>
+                <option value="approachDate">Fecha de aproximación</option>
+            </select>
+        </div>
+        <table id="asteroidsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Size (km)</th>
+                    <th>Velocity (km/h)</th>
+                    <th>Approach Date</th>
+                    <th>Potentially hazardous</th>
+                </tr>
+            </thead>
+            <tbody id="asteroidsTableBody"></tbody>
+        </table>
+    </body>
+</html>
